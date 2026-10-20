@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hypr-hybrid-layout"
+version = "0.1.0"
+description = "Zero-Restart 1-Click Tiling to Traditional Floating Desktop Switcher for Hyprland"
+readme = "README.md"
+authors = [{ name = "Ayyappa Pravin", email = "apravint@gmail.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Desktop Environment :: Window Managers"
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+hypr-hybrid-layout = "hypr_hybrid_layout.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/apravint/hypr-hybrid-layout"
+Repository = "https://github.com/apravint/hypr-hybrid-layout"
+Issues = "https://github.com/apravint/hypr-hybrid-layout/issues"
